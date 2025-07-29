@@ -4,6 +4,13 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+// vite.config.js
+export default {
+  server: {
+    allowedHosts: ['rastta.onrender.com']
+  }
+}
+
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
